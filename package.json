@@ -5,6 +5,7 @@
   "main": "server.js",
   "author": "",
   "license": "ISC",
+  "type": "module",
   "scripts": {
     "dev": "DEBUG=*:dev ./node_modules/.bin/nodemon ./bin",
     "start-docker": "pm2-runtime start docker/pm2.json"
@@ -19,7 +20,7 @@
     "tough-cookie": "^4.1.2"
   },
   "devDependencies": {
-    "eslint": "^8.40.0",
+    "eslint": "^7.32.0 || ^8.2.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.25.2",
     "nodemon": "^2.0.22"

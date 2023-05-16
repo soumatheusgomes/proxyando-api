@@ -1,0 +1,10 @@
+{
+  "apps": [
+    {
+      "name": "app",
+      "script": "./bin/index.js",
+      "autorestart": true,
+      "max_memory_restart": "1024M"
+    }
+  ]
+}

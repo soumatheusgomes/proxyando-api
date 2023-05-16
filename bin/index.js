@@ -3,12 +3,9 @@
 /**
  * Module dependencies.
  */
+import http from 'http';
 
-const http = require('http');
-const Debug = require('debug');
-const app = require('../app.js');
-
-const debug = Debug(`${process.env.APP_NAME || 'app'}:dev`);
+import app from '../app.js';
 
 /**
  * Normalize a port into a number, string, or false.
@@ -75,8 +72,8 @@ function onError(error) {
 
 function onListening() {
   const addr = server.address();
-  const bind = typeof addr === 'string' ? `pipe ${addr}` : `port ${addr.port}`;
-  debug(`Listening on ${bind}`);
+  // const bind = typeof addr === 'string' ? `pipe ${addr}` : `port ${addr.port}`;
+  console.log(`Listening on http://localhost:${addr.port}`);
 }
 
 /**
